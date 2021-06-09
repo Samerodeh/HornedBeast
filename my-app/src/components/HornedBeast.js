@@ -10,28 +10,40 @@ class HornedBeast extends React.Component {
         }
     }
 
-    NumOfClicks = () => {
+    NumClicks = () => {
         let value = this.state.NumOfClicks;
         this.setState({ NumOfClicks: value += 1 })
 
-        this.props.handleShow();
+        this.props.handleClose();
+
     }
-    
+
 
     render() {
 
         return (
             <div>
-                <Card onClick={this.upTheImage} style={{ width: '18rem', height: '35rem' }}>
-                    <Card.Img variant="top" src={this.props.image} onClick={this.NumOfClicks} />
+                <Card style={{ width: '18rem', height: '35rem' }}>
+                    <Card.Img variant="top" src={this.props.image}
+                        onClick={() => {
+                            this.NumClicks();
+                            //this.prpos.handleClose(this.props);
+                            
+                        }}
+                    />
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
+
                         <Card.Text>
+
                             ❤️ = {this.state.NumOfClicks}
+
                         </Card.Text>
 
                         <Card.Text>
                             {this.props.description}
+                            {this.props.keyword} 
+                            {this.props.horns}
                         </Card.Text>
 
                     </Card.Body>

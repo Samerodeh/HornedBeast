@@ -11,20 +11,18 @@ class App extends React.Component {
     super(props);
     this.state = {
 
-      useState: Data,
-      show: false,
-      UpImage: {}
+      upImage: {},
+      show: false
     }
   }
 
-  handleClose = () => {
-    this.setState({ show: false })
-  }
+  handleClose = (imgCard) => {
+    this.setState({
+      show: !this.state.show,
+      upImage: imgCard
 
-  handleShow = () => {
-    this.setState({ show: true })
-  }
-
+    }
+    )}
 
   render() {
     return (
@@ -33,22 +31,20 @@ class App extends React.Component {
         <Header />
 
         <Main
-          useState={this.state.useState}
-          handleShow={this.handleShow} />
+          Data={Data}
+         handleClose={this.handleClose} />
 
         <Footer />
 
         <SelectedBeast
 
           show={this.state.show}
-          chandleClose={this.handleClose}
-          title={Data.title}
-          image={Data.image}
-          description={Data.description}
+          handleClose={this.handleClose}
+          upImage={this.state.upImage}
 
         />
 
-      </div>
+      </div >
     )
   }
 }
