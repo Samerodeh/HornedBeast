@@ -1,4 +1,6 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends React.Component {
     constructor(props) {
@@ -11,22 +13,32 @@ class HornedBeast extends React.Component {
     NumOfClicks = () => {
         let value = this.state.NumOfClicks;
         this.setState({ NumOfClicks: value += 1 })
+
+        this.props.handleShow();
     }
+    
 
     render() {
+
         return (
             <div>
-                <h2>{this.props.title}</h2>
-                <img src={this.props.img} alt={this.props.keyword} onClick={this.NumOfClicks} />
-                <p> {this.props.description}</p>
-                <p> {this.state.NumOfClicks} </p>
+                <Card onClick={this.upTheImage} style={{ width: '18rem', height: '35rem' }}>
+                    <Card.Img variant="top" src={this.props.image} onClick={this.NumOfClicks} />
+                    <Card.Body>
+                        <Card.Title>{this.props.title}</Card.Title>
+                        <Card.Text>
+                            ❤️ = {this.state.NumOfClicks}
+                        </Card.Text>
+
+                        <Card.Text>
+                            {this.props.description}
+                        </Card.Text>
+
+                    </Card.Body>
+                </Card>
             </div>
         )
     }
 }
 
-
-
 export default HornedBeast;
-
-
