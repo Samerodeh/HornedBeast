@@ -17,12 +17,15 @@ class App extends React.Component {
   }
 
   handleClose = (imgCard) => {
-    this.setState({
+    console.log(imgCard)
+     this.setState({
       show: !this.state.show,
+      
       upImage: imgCard
 
     }
-    )}
+    ) } 
+    
 
   render() {
     return (

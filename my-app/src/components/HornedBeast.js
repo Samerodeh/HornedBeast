@@ -2,6 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 
+import CardGroup from 'react-bootstrap/CardGroup'
+
+
 class HornedBeast extends React.Component {
     constructor(props) {
         super(props);
@@ -10,11 +13,11 @@ class HornedBeast extends React.Component {
         }
     }
 
-    NumClicks = () => {
+    NumClicks = (cardprops) => {
         let value = this.state.NumOfClicks;
         this.setState({ NumOfClicks: value += 1 })
 
-        this.props.handleClose();
+        this.props.handleClose(cardprops);
 
     }
 
@@ -23,11 +26,12 @@ class HornedBeast extends React.Component {
 
         return (
             <div>
+                
+                <CardGroup>
                 <Card style={{ width: '18rem', height: '35rem' }}>
                     <Card.Img variant="top" src={this.props.image}
                         onClick={() => {
-                            this.NumClicks();
-                            //this.prpos.handleClose(this.props);
+                            this.NumClicks(this.props);
                             
                         }}
                     />
@@ -48,6 +52,8 @@ class HornedBeast extends React.Component {
 
                     </Card.Body>
                 </Card>
+                </CardGroup>
+                
             </div>
         )
     }
