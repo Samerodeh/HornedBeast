@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Class02 :
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Number and name of feature: I used 3 features
 
-## Available Scripts
+1. map
+2. state
+3. props
 
-In the project directory, you can run:
+* Start time: 11 pm
 
-### `npm start`
+* End time: 3 am
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*Actual time needed to complete: 4 hours*
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Class03 :
 
-### `npm test`
+### Number and name of feature: I used 5 features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. state
+2. props
+3. bootstrap
+4. card
+5. map function
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Start time: 4 pm
+* End time: 4 am
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*Actual time needed to complete: 12 hours*
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Class04 : 
 
-### `npm run eject`
+### Number and name of feature: I used 6 features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. bootstrap
+2. Card
+3. props
+4. state
+5. form
+6. filter function
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Start time : 2 pm
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* End time : 6 pm
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Actual time needed to complete: 4 hours*
